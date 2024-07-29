@@ -1,0 +1,92 @@
+html, body {
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+/* GENERAL */
+
+main {
+    position: relative;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #ebe9e1;
+    z-index: 100%;
+    display: block;
+    top: 0;
+}
+
+header .content {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 0 1.875rem;
+}
+
+header .logo {
+    flex: 1;
+    text-decoration: none;
+    color: black;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  header nav li {
+    padding: 0 0.6rem;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  header nav a:hover {
+    opacity: 0.6;
+    transition: opacity 0.18s ease-in;
+  }
+  
+  header .mobile {
+    display: none;
+  }
+
+  @media only screen and (max-width: 760px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .mobile ul {
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+  
+    header img {
+      width: 1.6rem;
+      height: auto;
+    }
+  }
